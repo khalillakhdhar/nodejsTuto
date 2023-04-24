@@ -12,3 +12,5 @@ exports.createUser=(user)=>{
     }
     );
 }
+// méthode simulaire de crud sans express de l'instance de user avec findById et update 
+// méthode de findByEmailAndPassword
