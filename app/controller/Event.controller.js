@@ -12,3 +12,5 @@
      }
      );
  }
+ // méthode simulaire de crud sans express de l'instance de event avec findById et update
+ // méthode findByTitre et findbyUser pour chaque evennement
