@@ -21,3 +21,27 @@ exports.findAllUsers = (req, res) => {
         res.send(err.message);
     });
 }
+// get user by id with res,req
+exports.findUserById = (req, res) => {
+    User.findById(req.params.id).then((data) => {
+        res.send(data);
+    }).catch((err) => {
+        res.send(err.message);
+    });
+}
+// update user by id with res,req
+exports.updateUserById = (req, res) => {
+User.findByIdAndUpdate(req.params.id, req.body).then((data) => {
+        res.send(data);
+    }).catch((err) => {
+        res.send(err.message);
+    });
+    // delete user by id with res,req
+exports.deleteUserById = (req, res) => {
+    User.findByIdAndDelete(req.params.id).then((data) => {
+        res.send(data);
+    }).catch((err) => {
+        res.send(err.message);
+    });
+
+}
